@@ -13,8 +13,13 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("FlashMD")
-        self.geometry("800x560")
-        self.minsize(640, 420)
+        self.update_idletasks()
+        sw = self.winfo_screenwidth()
+        sh = self.winfo_screenheight()
+        w, h = sw // 2, sh // 2
+        x, y = sw // 4, sh // 4
+        self.geometry(f"{w}x{h}+{x}+{y}")
+        self.minsize(480, 360)
 
         theme.apply(self)
 

@@ -20,11 +20,11 @@ class StudySessionScreen(ttk.Frame):
         self._flipped = False
 
         self._build()
-        self._load_queue()
+        self.after(0, self._load_queue)
 
     def _build(self):
         self.columnconfigure(0, weight=1)
-        self.rowconfigure(1, weight=1)
+        self.rowconfigure(2, weight=1)
 
         # Header bar
         hdr = ttk.Frame(self, style="Surface.TFrame")

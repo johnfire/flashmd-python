@@ -120,6 +120,14 @@ pytest
 
 ---
 
+## Support
+
+If FlashMD is useful to you and you'd like to help keep projects like this going, a small donation is always appreciated:
+
+[Donate via PayPal](https://paypal.me/christopherrehm001)
+
+---
+
 ## License
 
 MIT — Copyright (c) 2025 Christopher Rehm
